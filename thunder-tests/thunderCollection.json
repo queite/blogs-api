@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "aab753d0-932c-4e26-9ccf-7f43aebfef20",
+    "colName": "blogs-api",
+    "created": "2022-07-13T22:28:37.952Z",
+    "sortNum": 10000,
+    "folders": [
+      {
+        "_id": "4f8dfdae-ff44-467b-a894-aac25c2e3c59",
+        "name": "users",
+        "containerId": "",
+        "created": "2022-07-13T22:28:45.061Z",
+        "sortNum": 10000
+      },
+      {
+        "_id": "6e1c2498-6215-4ce7-9bc1-67687d6c4b0b",
+        "name": "login",
+        "containerId": "",
+        "created": "2022-07-13T22:37:47.104Z",
+        "sortNum": 20000
+      }
+    ]
+  }
+]

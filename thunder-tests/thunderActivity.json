@@ -1,0 +1,30 @@
+[
+  {
+    "_id": "970dcbb6-20fd-4f5a-bf1d-2262ad8c4e54",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/users",
+    "url": "localhost:3000/users",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-13T22:29:09.931Z",
+    "modified": "2022-07-13T22:29:28.152Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "369d1345-b2cd-4179-9e36-fe32a6b45f6d",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/user",
+    "url": "localhost:3000/user",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-13T22:29:42.281Z",
+    "modified": "2022-07-13T22:30:18.523Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  }
+]
