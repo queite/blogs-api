@@ -2,9 +2,17 @@ const Joi = require('joi');
 
 const schemas = {
   login: Joi.object().keys({
-    email: Joi.string().required().messages({ 'string.empty': 'Some required fields are missing' }),
-    password: Joi.string().required()
+    email: Joi.string().email().required()
       .messages({ 'string.empty': 'Some required fields are missing' }),
+    password: Joi.string().required()
+      .messages({ 'string.email': 'Some required fields are missing' }),
+  }),
+
+  user: Joi.object().keys({
+    displayName: Joi.string().min(8).required(),
+    email: Joi.string().email().required(),
+    password: Joi.string().min(6).alphanum().required(),
+    image: Joi.string().required(),
   }),
 };
 // message('Some required fields are missing')

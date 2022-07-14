@@ -17,5 +17,24 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "9b01167a-76c1-4b11-9f92-beb6072f5234",
+    "colId": "aab753d0-932c-4e26-9ccf-7f43aebfef20",
+    "containerId": "4f8dfdae-ff44-467b-a894-aac25c2e3c59",
+    "name": "createUser",
+    "url": "localhost:3000/user",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2022-07-14T17:30:47.195Z",
+    "modified": "2022-07-14T18:00:47.378Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\r\n  \"displayName\": \"Brett Wiltshire\",\r\n  \"email\": \"teste@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"image\": \"http://4.bp.blogspot.com/_YA50adQ-7vQ/S1gfR_6ufpI/AAAAAAAAAAk/1ErJGgRWZDg/S45/brett.png\"\r\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]

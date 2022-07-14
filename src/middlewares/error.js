@@ -7,6 +7,9 @@ module.exports = (err, _req, res, _next) => {
       case ('UnauthorizedError'):
       res.status(400).json({ message });
       break;
+      case ('AlreadyRegistered'):
+      res.status(409).json({ message });
+      break;
     // case 'NotFoundError':
     //   res.status(404).json({ message });
     //   break;
