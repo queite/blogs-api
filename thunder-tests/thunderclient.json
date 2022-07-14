@@ -55,5 +55,24 @@
     ],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "dc1381ad-e721-49bd-a2aa-f717b07d9a0f",
+    "colId": "aab753d0-932c-4e26-9ccf-7f43aebfef20",
+    "containerId": "4f8dfdae-ff44-467b-a894-aac25c2e3c59",
+    "name": "getById",
+    "url": "localhost:3000/user/2",
+    "method": "GET",
+    "sortNum": 50000,
+    "created": "2022-07-14T18:54:18.381Z",
+    "modified": "2022-07-14T19:22:29.806Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "eyJhbGciOiJzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoibGV3aXNoYW1pbHRvbkBnbWFpbC5jb20ifSwiaWF0IjoxNjU3ODIzMjc2fQ.4DGJk5iwly90ZttViSN1t0o-J048U1wukdSwZy6UuLY"
+      }
+    ],
+    "params": [],
+    "tests": []
   }
 ]
