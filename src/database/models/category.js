@@ -7,9 +7,6 @@ const createCategory = (sequelize, DataTypes) => {
       autoIncrement: true,
     },
     name: DataTypes.STRING,
-    email: DataTypes.STRING,
-    password: DataTypes.STRING,
-    image: DataTypes.STRING,
   }, {
     tableName: 'Categories',
     timestamps: false,

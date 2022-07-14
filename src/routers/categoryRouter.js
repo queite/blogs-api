@@ -7,7 +7,7 @@ const router = Router();
 router.use(validateToken);
 
 router.post('/', categoryController.create);
-// router.get('/', userController.listAll);
+router.get('/', categoryController.list);
 // router.get('/:id', userController.getById);
 
 module.exports = router;
