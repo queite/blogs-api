@@ -14,8 +14,11 @@ const schemas = {
     password: Joi.string().min(6).alphanum().required(),
     image: Joi.string().required(),
   }),
+
+  name: Joi.object().keys({
+    name: Joi.string().required(),
+  }),
 };
-// message('Some required fields are missing')
 
 const validateSchema = (schema, dataToValidate) => {
   const { error, value } = schema.validate(dataToValidate);
