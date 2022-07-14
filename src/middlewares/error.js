@@ -10,6 +10,9 @@ module.exports = (err, _req, res, _next) => {
       case ('AlreadyRegistered'):
       res.status(409).json({ message });
       break;
+      case ('JsonWebTokenError'):
+      res.status(401).json({ message: 'Expired or invalid token' });
+      break;
     // case 'NotFoundError':
     //   res.status(404).json({ message });
     //   break;

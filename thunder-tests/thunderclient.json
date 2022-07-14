@@ -8,12 +8,12 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2022-07-13T22:37:55.501Z",
-    "modified": "2022-07-13T22:54:45.512Z",
+    "modified": "2022-07-14T18:27:56.222Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n    \"email\": \"lewishamilton@gmail.com\",\n    \"password\": \"123\"\n}",
+      "raw": "{\n    \"email\": \"lewishamilton@gmail.com\",\n    \"password\": \"123456\"\n}",
       "form": []
     },
     "tests": []
@@ -35,6 +35,25 @@
       "raw": "{\r\n  \"displayName\": \"Brett Wiltshire\",\r\n  \"email\": \"teste@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"image\": \"http://4.bp.blogspot.com/_YA50adQ-7vQ/S1gfR_6ufpI/AAAAAAAAAAk/1ErJGgRWZDg/S45/brett.png\"\r\n}",
       "form": []
     },
+    "tests": []
+  },
+  {
+    "_id": "df80b3ef-4300-4d87-8305-cfa18cd38a03",
+    "colId": "aab753d0-932c-4e26-9ccf-7f43aebfef20",
+    "containerId": "4f8dfdae-ff44-467b-a894-aac25c2e3c59",
+    "name": "listAll",
+    "url": "localhost:3000/user",
+    "method": "GET",
+    "sortNum": 40000,
+    "created": "2022-07-14T18:26:21.999Z",
+    "modified": "2022-07-14T18:47:17.026Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoibGV3aXNoYW1pbHRvbkBnbWFpbC5jb20ifSwiaWF0IjoxNjU3ODIzMjc2fQ.4DGJk5iwly90ZttViSN1t0o-J048U1wukdSwZy6UuLY"
+      }
+    ],
+    "params": [],
     "tests": []
   }
 ]
