@@ -27,7 +27,7 @@ const userController = {
 
   delete: async (req, res) => {
     await userService.delete(req.user);
-    res.status(204).send();
+    res.status(204).end();
   },
 };
 

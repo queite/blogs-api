@@ -27,12 +27,12 @@
     "method": "POST",
     "sortNum": 30000,
     "created": "2022-07-14T17:30:47.195Z",
-    "modified": "2022-07-15T21:10:22.083Z",
+    "modified": "2022-07-15T21:36:50.643Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"displayName\": \"Bret Wiltshire\",\n  \"email\": \"teste6@gmail.com\",\n  \"password\": \"123456\",\n  \"image\": \"http://4.bp.blogspot.com/_YA50adQ-7vQ/S1gfR_6ufpI/AAAAAAAAAAk/1ErJGgRWZDg/S45/brett.png\"\n}",
+      "raw": "{\n  \"displayName\": \"Bret Wiltshire\",\n  \"email\": \"teste8@gmail.com\",\n  \"password\": \"123456\",\n  \"image\": \"http://4.bp.blogspot.com/_YA50adQ-7vQ/S1gfR_6ufpI/AAAAAAAAAAk/1ErJGgRWZDg/S45/brett.png\"\n}",
       "form": []
     },
     "tests": []
@@ -232,11 +232,11 @@
     "method": "DELETE",
     "sortNum": 130000,
     "created": "2022-07-15T20:34:19.688Z",
-    "modified": "2022-07-15T21:14:45.233Z",
+    "modified": "2022-07-15T22:22:18.219Z",
     "headers": [
       {
         "name": "Authorization",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxMCwiZW1haWwiOiJ0ZXN0ZTZAZ21haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0NTYifSwiaWF0IjoxNjU3OTE5NDE0fQ.44J2ExdkYMOSoXdLykjUwaA91EXqXzB5Ij60B2wqMSE"
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjozLCJlbWFpbCI6InRlc3RlOEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IjEyMzQ1NiJ9LCJpYXQiOjE2NTc5MjM2OTh9.qSTjA3STzx6se_4AWTtYa3cSvSUuW6_9AIWA4f0613Y"
       }
     ],
     "params": [],
