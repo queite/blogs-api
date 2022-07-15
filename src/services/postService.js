@@ -4,20 +4,22 @@ const config = require('../database/config/config');
 
 const sequelize = new Sequelize(config.development);
 
+const includeUserCategory = [
+  {
+  model: db.User,
+  as: 'user',
+  attributes: { exclude: 'password' },
+  },
+  { model: db.Category,
+    as: 'categories',
+    through: { attributes: [] }, // Elimina dados da tabela de junção PostCategories. O through vem da relação Belongs-to-Many. https://sequelize.org/docs/v6/advanced-association-concepts/eager-loading/
+  },
+];
+
 const postService = {
   list: async () => {
     const posts = await db.BlogPost.findAll({
-      include: [
-        {
-        model: db.User,
-        as: 'user',
-        attributes: { exclude: 'password' },
-        },
-        { model: db.Category,
-          as: 'categories',
-          through: { attributes: [] }, // Elimina dados da tabela de junção PostCategories. O through vem da relação Belongs-to-Many. https://sequelize.org/docs/v6/advanced-association-concepts/eager-loading/
-        },
-      ],
+      include: includeUserCategory,
     });
     return posts;
   },
@@ -35,6 +37,20 @@ const postService = {
       return post;
     });
     return result;
+  },
+
+  getById: async (id) => {
+    const post = await db.BlogPost.findByPk(id, {
+      include: includeUserCategory,
+    });
+
+    if (!post) {
+      const err = new Error('Post does not exist');
+      err.name = 'NotFoundError';
+      throw err;
+    }
+
+    return post;
   },
 };
 
