@@ -17,6 +17,10 @@ const postService = {
     });
     return posts;
   },
+
+  create: async (body) => {
+
+  },
 };
 
 module.exports = postService;

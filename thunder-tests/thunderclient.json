@@ -136,5 +136,29 @@
     ],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "a5ed4885-eee6-42ef-9874-0296a166c60d",
+    "colId": "aab753d0-932c-4e26-9ccf-7f43aebfef20",
+    "containerId": "6db63d39-af2b-4e22-be1b-2a782b647322",
+    "name": "create",
+    "url": "localhost:3000/post/teste",
+    "method": "GET",
+    "sortNum": 90000,
+    "created": "2022-07-15T12:15:22.749Z",
+    "modified": "2022-07-15T13:12:15.917Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoibGV3aXNoYW1pbHRvbkBnbWFpbC5jb20ifSwiaWF0IjoxNjU3ODg3NDIyfQ.oABdxICNlWD0FRkMaABogOQgHiQVBIyOYGX8Rjbe2TI"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"categoryIds\": [18, 14]\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]

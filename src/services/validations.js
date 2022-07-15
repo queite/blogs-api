@@ -18,6 +18,12 @@ const schemas = {
   name: Joi.object().keys({
     name: Joi.string().required(),
   }),
+
+  post: Joi.object().keys({
+    title: Joi.string().required(),
+    content: Joi.string().required(),
+    categoryIds1: Joi.array().items(Joi.number().integer().min(1)),
+  }),
 };
 
 const validateSchema = (schema, dataToValidate) => {
