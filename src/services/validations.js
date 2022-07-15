@@ -22,8 +22,8 @@ const schemas = {
   post: Joi.object().keys({
     title: Joi.string().required(),
     content: Joi.string().required(),
-    categoryIds1: Joi.array().items(Joi.number().integer().min(1)),
-  }),
+    categoryIds: Joi.array().items(Joi.number().integer().min(1)),
+  }).messages({ 'string.empty': 'Some required fields are missing' }),
 };
 
 const validateSchema = (schema, dataToValidate) => {

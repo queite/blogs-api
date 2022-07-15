@@ -14,7 +14,7 @@ const authService = {
       throw err;
     }
 
-    const token = jwtService.createToken({ email: user.email });
+    const token = jwtService.createToken({ email: user.email, id: user.id });
     return token;
   },
 };

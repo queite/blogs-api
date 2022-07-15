@@ -9,11 +9,17 @@ const postController = {
   },
 
   create: async (req, res) => {
-    const { categoryIds } = req.body;
+    const { categoryIds, title, content } = req.body;
     validateSchema(schemas.post, req.body);
-    await categoryService.checkIfExists(categoryIds);
+    const categories = await categoryService.checkIfExists(categoryIds);
+    const verifydCategoryId = categories.map((category) => category.id);
 
-    const post = await postService.create(req.body);
+    const post = await postService.create({
+      id: req.user,
+      title,
+      content,
+      categoryIds: verifydCategoryId,
+    });
     res.status(201).json(post);
   },
 };

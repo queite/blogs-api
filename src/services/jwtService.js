@@ -9,7 +9,7 @@ const jwtService = {
 
   validateToken: (token) => {
       const data = jwt.verify(token, process.env.JWT_SECRET);
-      return data;
+      return data.data.id;
   },
 };
 

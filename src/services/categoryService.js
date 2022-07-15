@@ -17,7 +17,7 @@ const categoryService = {
     const categories = existingCategory.filter((category) => category !== null);
 
     if (!categories.length) {
-      const err = new Error('"categoryIds" not found"User already registered');
+      const err = new Error('"categoryIds" not found');
       err.name = 'ValidationError';
       throw err;
     }
