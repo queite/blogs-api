@@ -53,10 +53,15 @@ const postService = {
     return post;
   },
 
-  update: async (postId, title, content) => {
-    const post = await db.BlogPost.update({ title, content },
-      { where: { id: postId } });
-    return post;
+  update: async (id, title, content) => {
+    await db.BlogPost.update({ title, content },
+      { where: { id } });
+  },
+
+  delete: async (id) => {
+    await db.BlogPost.destroy({
+      where: { id },
+    });
   },
 };
 

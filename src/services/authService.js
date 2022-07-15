@@ -17,6 +17,15 @@ const authService = {
     const token = jwtService.createToken({ email: user.email, id: user.id });
     return token;
   },
+
+  authorization: (token, authorizedUser) => {
+    const currentUser = jwtService.validateToken(token);
+    if (currentUser !== authorizedUser) {
+      const err = new Error('Unauthorized user');
+      err.name = 'UnauthorizedUser';
+      throw err;
+    }
+  },
 };
 
 module.exports = authService;

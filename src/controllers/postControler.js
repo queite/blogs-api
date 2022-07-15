@@ -1,7 +1,7 @@
 const { schemas, validateSchema } = require('../services/validations');
 const postService = require('../services/postService');
 const categoryService = require('../services/categoryService');
-const jwtService = require('../services/jwtService');
+const authService = require('../services/authService');
 
 const postController = {
   list: async (req, res) => {
@@ -31,14 +31,24 @@ const postController = {
 
   update: async (req, res) => {
     const { id } = req.params;
+    const token = req.headers.authorization;
     const { title, content } = validateSchema(schemas.updatePost, req.body);
-    const userId = jwtService.validateToken(req.headers.authorization);
     const post = await postService.getById(id);
-    if (userId !== post.user.id) res.status(401).json({ message: 'Unauthorized user' });
+    authService.authorization(token, post.user.id);
 
     await postService.update(id, title, content);
     const updatedPost = await postService.getById(id);
     res.status(200).json(updatedPost);
+  },
+
+  delete: async (req, res) => {
+    const { id } = req.params;
+    const token = req.headers.authorization;
+    const post = await postService.getById(id);
+    authService.authorization(token, post.user.id);
+
+    await postService.delete(id);
+    res.status(204).send();
   },
 };
 

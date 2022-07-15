@@ -8,7 +8,7 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2022-07-13T22:37:55.501Z",
-    "modified": "2022-07-14T18:27:56.222Z",
+    "modified": "2022-07-15T19:47:13.014Z",
     "headers": [],
     "params": [],
     "body": {
@@ -185,23 +185,42 @@
     "colId": "aab753d0-932c-4e26-9ccf-7f43aebfef20",
     "containerId": "6db63d39-af2b-4e22-be1b-2a782b647322",
     "name": "update",
-    "url": "localhost:3000/post/5",
+    "url": "localhost:3000/post/6",
     "method": "PUT",
     "sortNum": 110000,
     "created": "2022-07-15T18:46:18.328Z",
-    "modified": "2022-07-15T19:08:22.093Z",
+    "modified": "2022-07-15T19:36:04.698Z",
     "headers": [
       {
         "name": "Authorization",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoibGV3aXNoYW1pbHRvbkBnbWFpbC5jb20iLCJpZCI6MX0sImlhdCI6MTY1NzkwOTA5MX0.G1RZDToWHAt2am_bAwO2UCYYN4xr5FUifl4m77dmoOs"
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoiYnJldHRAZW1haWwuY29tIiwiaWQiOjN9LCJpYXQiOjE2NTc5MTM3MTd9.nU4WsWbURSbqXxs514Fn5E9ieKP9WNbiCm3W47sP6rI"
       }
     ],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\r\n  \"title\": \"olha só de novo\",\r\n  \"content\": \"heheheheheh\"\r\n}",
+      "raw": "{\r\n  \"title\": \"olha só de\",\r\n  \"content\": \"heheheheheh\"\r\n}",
       "form": []
     },
+    "tests": []
+  },
+  {
+    "_id": "a676eb6b-6156-4c79-8e87-18886f429128",
+    "colId": "aab753d0-932c-4e26-9ccf-7f43aebfef20",
+    "containerId": "6db63d39-af2b-4e22-be1b-2a782b647322",
+    "name": "delete",
+    "url": "localhost:3000/post/1",
+    "method": "DELETE",
+    "sortNum": 120000,
+    "created": "2022-07-15T19:45:06.544Z",
+    "modified": "2022-07-15T20:19:13.360Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoibGV3aXNoYW1pbHRvbkBnbWFpbC5jb20iLCJpZCI6MX0sImlhdCI6MTY1NzkxNDQzM30.t1LRIna1xcuurnpGNOg2dizyicySLQVk0yKVldx9EjU"
+      }
+    ],
+    "params": [],
     "tests": []
   }
 ]
