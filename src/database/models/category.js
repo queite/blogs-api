@@ -12,10 +12,6 @@ const createCategory = (sequelize, DataTypes) => {
     timestamps: false,
   });
 
-  Category.associate = (db) => {
-    // User.hasMany(db.Pet, { as: 'pets', foreignKey: 'userId' });
-  }
-
   return Category;
 };
 

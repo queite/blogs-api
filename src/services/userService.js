@@ -13,12 +13,12 @@ const userService = {
     }
   },
 
-  createUser: async ({ displayName, email, password, image }) => {
+  create: async ({ displayName, email, password, image }) => {
     const user = await db.User.create({ displayName, email, password, image });
     return user.datavalues;
   },
 
-  listAll: async () => {
+  list: async () => {
     const users = await db.User.findAll({
       attributes: { exclude: ['password'] },
     });

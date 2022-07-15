@@ -3,19 +3,19 @@ const { schemas, validateSchema } = require('../services/validations');
 const jwtService = require('../services/jwtService');
 
 const userController = {
-  createUser: async (req, res) => {
+  create: async (req, res) => {
     const validatedUser = validateSchema(schemas.user, req.body);
     const { displayName, email, password, image } = validatedUser;
     await userService.findByEmail(email);
 
-    await userService.createUser({ displayName, email, password, image });
+    await userService.create({ displayName, email, password, image });
     const token = jwtService.createToken({ email, password });
 
     res.status(201).json({ token });
   },
 
-  listAll: async (req, res) => {
-    const users = await userService.listAll();
+  list: async (req, res) => {
+    const users = await userService.list();
     res.status(200).json(users);
   },
 
