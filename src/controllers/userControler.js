@@ -8,8 +8,8 @@ const userController = {
     const { displayName, email, password, image } = validatedUser;
     await userService.findByEmail(email);
 
-    await userService.create({ displayName, email, password, image });
-    const token = jwtService.createToken({ email, password });
+    const { id } = await userService.create({ displayName, email, password, image });
+    const token = jwtService.createToken({ id, email, password });
 
     res.status(201).json({ token });
   },
@@ -23,6 +23,11 @@ const userController = {
     const { id } = req.params;
     const user = await userService.getById(id);
     res.status(200).json(user);
+  },
+
+  delete: async (req, res) => {
+    await userService.delete(req.user);
+    res.status(204).send();
   },
 };
 

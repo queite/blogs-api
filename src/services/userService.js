@@ -15,7 +15,7 @@ const userService = {
 
   create: async ({ displayName, email, password, image }) => {
     const user = await db.User.create({ displayName, email, password, image });
-    return user.datavalues;
+    return user;
   },
 
   list: async () => {
@@ -36,6 +36,12 @@ const userService = {
       throw err;
     }
     return user;
+  },
+
+  delete: async (id) => {
+    await db.User.destroy({
+      where: { id },
+    });
   },
 };
 

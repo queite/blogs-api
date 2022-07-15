@@ -8,12 +8,12 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2022-07-13T22:37:55.501Z",
-    "modified": "2022-07-15T19:47:13.014Z",
+    "modified": "2022-07-15T20:36:30.613Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n    \"email\": \"lewishamilton@gmail.com\",\n    \"password\": \"123456\"\n}",
+      "raw": "{\n    \"email\": \"teste@gmail.com\",\n    \"password\": \"123456\"\n}",
       "form": []
     },
     "tests": []
@@ -27,12 +27,12 @@
     "method": "POST",
     "sortNum": 30000,
     "created": "2022-07-14T17:30:47.195Z",
-    "modified": "2022-07-14T18:00:47.378Z",
+    "modified": "2022-07-15T21:10:22.083Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\r\n  \"displayName\": \"Brett Wiltshire\",\r\n  \"email\": \"teste@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"image\": \"http://4.bp.blogspot.com/_YA50adQ-7vQ/S1gfR_6ufpI/AAAAAAAAAAk/1ErJGgRWZDg/S45/brett.png\"\r\n}",
+      "raw": "{\n  \"displayName\": \"Bret Wiltshire\",\n  \"email\": \"teste6@gmail.com\",\n  \"password\": \"123456\",\n  \"image\": \"http://4.bp.blogspot.com/_YA50adQ-7vQ/S1gfR_6ufpI/AAAAAAAAAAk/1ErJGgRWZDg/S45/brett.png\"\n}",
       "form": []
     },
     "tests": []
@@ -218,6 +218,25 @@
       {
         "name": "Authorization",
         "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoibGV3aXNoYW1pbHRvbkBnbWFpbC5jb20iLCJpZCI6MX0sImlhdCI6MTY1NzkxNDQzM30.t1LRIna1xcuurnpGNOg2dizyicySLQVk0yKVldx9EjU"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "5adde976-39ef-48e0-9b76-73747c946b86",
+    "colId": "aab753d0-932c-4e26-9ccf-7f43aebfef20",
+    "containerId": "4f8dfdae-ff44-467b-a894-aac25c2e3c59",
+    "name": "delete",
+    "url": "localhost:3000/user/me",
+    "method": "DELETE",
+    "sortNum": 130000,
+    "created": "2022-07-15T20:34:19.688Z",
+    "modified": "2022-07-15T21:14:45.233Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxMCwiZW1haWwiOiJ0ZXN0ZTZAZ21haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0NTYifSwiaWF0IjoxNjU3OTE5NDE0fQ.44J2ExdkYMOSoXdLykjUwaA91EXqXzB5Ij60B2wqMSE"
       }
     ],
     "params": [],
