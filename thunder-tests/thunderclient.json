@@ -166,18 +166,42 @@
     "colId": "aab753d0-932c-4e26-9ccf-7f43aebfef20",
     "containerId": "6db63d39-af2b-4e22-be1b-2a782b647322",
     "name": "getById",
-    "url": "localhost:3000/post/20",
+    "url": "localhost:3000/post/1",
     "method": "GET",
     "sortNum": 100000,
     "created": "2022-07-15T17:42:59.467Z",
-    "modified": "2022-07-15T17:44:13.182Z",
+    "modified": "2022-07-15T18:20:42.615Z",
     "headers": [
       {
         "name": "Authorization",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoibGV3aXNoYW1pbHRvbkBnbWFpbC5jb20iLCJpZCI6MX0sImlhdCI6MTY1Nzg5Njg5M30.KHrYUqUj-oLHfASSV8qEpVneLkn1ysndimtl1VLkeN4"
+        "value": "yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoibGV3aXNoYW1pbHRvbkBnbWFpbC5jb20iLCJpZCI6MX0sImlhdCI6MTY1NzkwOTA5MX0.G1RZDToWHAt2am_bAwO2UCYYN4xr5FUifl4m77dmoOs"
       }
     ],
     "params": [],
+    "tests": []
+  },
+  {
+    "_id": "f6672d45-26b1-4ec6-a6f0-d3519c17f026",
+    "colId": "aab753d0-932c-4e26-9ccf-7f43aebfef20",
+    "containerId": "6db63d39-af2b-4e22-be1b-2a782b647322",
+    "name": "update",
+    "url": "localhost:3000/post/5",
+    "method": "PUT",
+    "sortNum": 110000,
+    "created": "2022-07-15T18:46:18.328Z",
+    "modified": "2022-07-15T19:08:22.093Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoibGV3aXNoYW1pbHRvbkBnbWFpbC5jb20iLCJpZCI6MX0sImlhdCI6MTY1NzkwOTA5MX0.G1RZDToWHAt2am_bAwO2UCYYN4xr5FUifl4m77dmoOs"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\r\n  \"title\": \"olha só de novo\",\r\n  \"content\": \"heheheheheh\"\r\n}",
+      "form": []
+    },
     "tests": []
   }
 ]

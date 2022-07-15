@@ -9,5 +9,6 @@ router.use(validateToken);
 router.get('/', postController.list);
 router.get('/:id', postController.getById);
 router.post('/', postController.create);
+router.put('/:id', postController.update);
 
 module.exports = router;

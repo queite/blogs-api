@@ -8,8 +8,8 @@ const jwtService = {
   },
 
   validateToken: (token) => {
-      const data = jwt.verify(token, process.env.JWT_SECRET);
-      return data.data.id;
+      const { data } = jwt.verify(token, process.env.JWT_SECRET);
+      return data.id;
   },
 };
 
