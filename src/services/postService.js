@@ -1,4 +1,5 @@
 const Sequelize = require('sequelize');
+const { Op } = require('sequelize');
 const db = require('../database/models');
 const config = require('../database/config/config');
 
@@ -62,6 +63,19 @@ const postService = {
     await db.BlogPost.destroy({
       where: { id },
     });
+  },
+
+  search: async (q) => {
+    const search = await db.BlogPost.findAll({
+      include: includeUserCategory,
+      where: {
+        [Op.or]: [
+          { title: { [Op.substring]: q } },
+          { content: { [Op.substring]: q } },
+        ],
+      },
+    });
+    return search;
   },
 };
 

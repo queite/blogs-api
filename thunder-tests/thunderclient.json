@@ -8,12 +8,12 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2022-07-13T22:37:55.501Z",
-    "modified": "2022-07-15T20:36:30.613Z",
+    "modified": "2022-07-16T22:16:14.215Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n    \"email\": \"teste@gmail.com\",\n    \"password\": \"123456\"\n}",
+      "raw": "{\n    \"email\": \"MichaelSchumacher@gmail.com\",\n    \"password\": \"123456\"\n}",
       "form": []
     },
     "tests": []
@@ -240,6 +240,31 @@
       }
     ],
     "params": [],
+    "tests": []
+  },
+  {
+    "_id": "e02856dd-c76c-4167-ad78-58febc33a0bf",
+    "colId": "aab753d0-932c-4e26-9ccf-7f43aebfef20",
+    "containerId": "6db63d39-af2b-4e22-be1b-2a782b647322",
+    "name": "search",
+    "url": "localhost:3000/post/search?q=la",
+    "method": "GET",
+    "sortNum": 140000,
+    "created": "2022-07-16T22:12:11.993Z",
+    "modified": "2022-07-16T22:16:34.122Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoiTWljaGFlbFNjaHVtYWNoZXJAZ21haWwuY29tIiwiaWQiOjJ9LCJpYXQiOjE2NTgwMDk3NzR9.7Mta0TVEvUgH9wF-qp4MQnHAf1R-njg8purV6kCrOJM"
+      }
+    ],
+    "params": [
+      {
+        "name": "q",
+        "value": "la",
+        "isPath": false
+      }
+    ],
     "tests": []
   }
 ]
