@@ -7,8 +7,6 @@ The project goal was to develop a database using Sequelize and a REST API to man
 The API presents all the `CRUD` operations. <br>
 JWT is present in the authentications, meanwhile, Joi handles the validations.
 
-<br>
-
 ## ✨**Features**
 
 Feature | Route
