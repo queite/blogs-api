@@ -26,10 +26,9 @@ Update the title and/or content of a blog post if the logged user is the author|
 Delete post by ID if the logged user is the author | DELETE /post/:id
 Delete the logged user | DELETE /user/me
 Search for title or content using a query string | GET /post/search
+<br/>
 
 ---
-
-<br/>
 
 🛠️ **Tools:**
 * [Sequelize](https://sequelize.org/)
@@ -41,8 +40,6 @@ Search for title or content using a query string | GET /post/search
 * [express-async-errors](https://www.npmjs.com/package/express-async-errors)
 * [nodemon](https://www.npmjs.com/package/nodemon)
 * [MySQL](https://www.mysql.com/)
-
-<br/>
 
 ---
 
