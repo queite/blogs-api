@@ -2,7 +2,7 @@
 
 Project developed in the Back-end Module at the [Trybe](https://www.betrybe.com/) course.
 
-## 🎯
+### 🎯
 The project goal was to develop a database using Sequelize and a REST API to manage a blog with the MSC software architecture using Node and Express. <br>
 The API presents all the `CRUD` operations. <br>
 JWT is present in the authentications, meanwhile, Joi handles the validations.
@@ -28,6 +28,7 @@ Delete the logged user | DELETE /user/me
 Search for title or content using a query string | GET /post/search
 
 ---
+
 <br/>
 
 🛠️ **Tools:**
@@ -36,9 +37,31 @@ Search for title or content using a query string | GET /post/search
 * [Node](https://nodejs.org/en/)
 * [JWT](https://jwt.io/)
 * [Joi](https://joi.dev/api/?v=17.6.0)
+* [dotenv](https://www.npmjs.com/package/dotenv)
+* [express-async-errors](https://www.npmjs.com/package/express-async-errors)
+* [nodemon](https://www.npmjs.com/package/nodemon)
+* [MySQL](https://www.mysql.com/)
 
 <br/>
+---
 
+## How to install the application:
+Download the code:
+```
+git clone git@github.com:queite/blogs-api.git
+```
+Enter the root folder:
+```
+cd blogs-api
+```
+Install dependencies:
+```
+npm install
+```
+Start the API:
+```
+npm start
+```
 ---
 
 All [Trybe](https://www.betrybe.com/) projects use `linters`, `Git` and `GitHub`.<br/>
