@@ -43,6 +43,7 @@ Search for title or content using a query string | GET /post/search
 * [MySQL](https://www.mysql.com/)
 
 <br/>
+
 ---
 
 ## How to install the application:
