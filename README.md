@@ -26,6 +26,13 @@ Delete the logged user | DELETE /user/me
 Search for title or content using a query string | GET /post/search
 <br/>
 
+## 📜Documentation
+Access the route `/api-docs` to see the documentation.
+
+Ex.: `http://localhost:3000/api-docs`
+
+<br>
+
 ---
 
 🛠️ **Tools:**
@@ -38,7 +45,7 @@ Search for title or content using a query string | GET /post/search
 * [express-async-errors](https://www.npmjs.com/package/express-async-errors)
 * [nodemon](https://www.npmjs.com/package/nodemon)
 * [MySQL](https://www.mysql.com/)
-
+* [Swagger](https://swagger.io/)
 ---
 
 ## How to install the application:
@@ -53,6 +60,10 @@ cd blogs-api
 Install dependencies:
 ```
 npm install
+```
+Run database service on docker:
+```
+docker compose up -d db --build
 ```
 Start the API:
 ```
